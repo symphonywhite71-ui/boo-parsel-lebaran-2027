@@ -3,8 +3,8 @@
 </style></head><body><header><h1 id="brand">Boo Gift House</h1><div class="muted">Manajemen Baby Hampers · Tanjungpinang</div></header><nav id="nav"></nav><section id="cloudLogin" style="max-width:520px;margin:18px auto;padding:16px;display:none"><div class="card"><h2>Login Boo Gift House</h2><p class="muted">Masuk untuk menyimpan data ke database online.</p><label>Email</label><input id="cloudEmail" type="email" autocomplete="username" placeholder="Email kamu" oninput="rememberCloudEmail()"><label>Password</label><div style="display:flex;gap:8px;align-items:center"><input id="cloudPassword" type="password" autocomplete="current-password" placeholder="Minimal 6 karakter" style="flex:1;min-width:0"><button type="button" id="toggleCloudPassword" onclick="toggleCloudPasswordVisibility()" aria-label="Tampilkan password">Lihat</button></div><button class="primary" type="button" onclick="cloudSignIn()">Masuk</button><button type="button" onclick="cloudSignUp()">Buat akun</button><p id="cloudMsg" class="muted"></p></div></section><main id="app"></main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
-const SUPABASE_URL='https://tpbyxujisiadkejpbqyf.supabase.co';
-const SUPABASE_KEY='sb_publishable_L1v08nI-JOBXfuJ_mH_Mmg_vqVlM_DI';
+const SUPABASE_URL='https://naritsqcdoovaaeraift.supabase.co';
+const SUPABASE_KEY='sb_publishable_2mGftBiZqzvNYytSqoaxtg_AAyhIPig';
 const cloudClient=window.supabase?.createClient(SUPABASE_URL,SUPABASE_KEY);
 let cloudUser=null, cloudReady=false, cloudTimer=null, cloudLoading=false;
 function cloudMessage(t){const e=document.getElementById('cloudMsg');if(e)e.textContent=t;}
